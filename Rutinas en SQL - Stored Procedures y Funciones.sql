@@ -1,0 +1,22 @@
+# Rutinas en SQL: Stored Procedures y Funciones
+
+-- El manejo de rutinas en MySQL esta dado por funciones y procedimientos almacenados,
+-- estás parten de la premisa fundatmental que toda rutina puede contener o no parametros
+-- Pueden haber funciones que no retornen nada, pero en el código si hacen algo
+-- Pueden haber funciones que no retornen nada, pero en el código si hacen algo
+-- Procedimientos almacenados: 
+-- Ventajas:
+	-- aumenta el rendimiento de las aplicaciones. Compila y maneja de manera más rápida
+    -- Son portatiles. Se puede llevar a otro servidor con misma estructura de datos
+    -- Pueden ser muy seguros, según como este configurado por el administrador
+-- Desventajas
+	-- aumento de uso de la memoria y CPU
+    -- Están restringidos a una lógica de negocios compleja, si son extensas lineas de codigo
+    -- Dificiles de mantener. Esto viene asociado a que son dificiles de depuras. 
+		-- Deben ser lo más concisos posibles
+-- Cuando utilizar:
+	-- Cuando se tenga dentro del servidor una tarea que sea programada
+    -- Cuando sea preciso compartir lógica de negocios con aplicaciones
+    -- Registrar información de manera aleatoria 
+-- IMPORTANTE: Tener en cuenta que consume recursos del servidor
+-- No tiene actualización. Lo ideal sería eliminarlo y volver a crear el SP
