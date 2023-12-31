@@ -1,0 +1,710 @@
+[{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f13"
+  },
+  "id": 54,
+  "name": "smartphone",
+  "price": 2174,
+  "stock": 86,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f14"
+  },
+  "id": 55,
+  "name": "laptop",
+  "price": 9557,
+  "stock": 0,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f15"
+  },
+  "id": 56,
+  "name": "tablet",
+  "price": 5358,
+  "stock": 2,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f16"
+  },
+  "id": 57,
+  "name": "smartwatch",
+  "price": 9384,
+  "stock": 22,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f17"
+  },
+  "id": 58,
+  "name": "television",
+  "price": 8477,
+  "stock": 60,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f18"
+  },
+  "id": 59,
+  "name": "headphones",
+  "price": 7570,
+  "stock": 58,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f19"
+  },
+  "id": 60,
+  "name": "speaker",
+  "price": 2856,
+  "stock": 30,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1a"
+  },
+  "id": 61,
+  "name": "keyboard",
+  "price": 2925,
+  "stock": 70,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1b"
+  },
+  "id": 62,
+  "name": "mouse",
+  "price": 2924,
+  "stock": 92,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1c"
+  },
+  "id": 63,
+  "name": "printer",
+  "price": 1329,
+  "stock": 50,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1d"
+  },
+  "id": 64,
+  "name": "router",
+  "price": 3389,
+  "stock": 30,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1e"
+  },
+  "id": 65,
+  "name": "monitor",
+  "price": 3764,
+  "stock": 44,
+  "description": null,
+  "image_url": null,
+  "category_id": 1,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f1f"
+  },
+  "id": 66,
+  "name": "game console",
+  "price": 567,
+  "stock": 54,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f20"
+  },
+  "id": 67,
+  "name": "smart home hub",
+  "price": 7332,
+  "stock": 44,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f21"
+  },
+  "id": 68,
+  "name": "digital camera",
+  "price": 1197,
+  "stock": 55,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f22"
+  },
+  "id": 69,
+  "name": "fitness tracker",
+  "price": 3080,
+  "stock": 76,
+  "description": null,
+  "image_url": null,
+  "category_id": 1,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f23"
+  },
+  "id": 70,
+  "name": "earbuds",
+  "price": 2732,
+  "stock": 99,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f24"
+  },
+  "id": 71,
+  "name": "smart bulb",
+  "price": 7829,
+  "stock": 26,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f25"
+  },
+  "id": 72,
+  "name": "e-reader",
+  "price": 7964,
+  "stock": 91,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f26"
+  },
+  "id": 73,
+  "name": "external hard drive",
+  "price": 7274,
+  "stock": 87,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f27"
+  },
+  "id": 74,
+  "name": "VR headset",
+  "price": 2711,
+  "stock": 67,
+  "description": null,
+  "image_url": null,
+  "category_id": 1,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f28"
+  },
+  "id": 75,
+  "name": "projector",
+  "price": 2219,
+  "stock": 14,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f29"
+  },
+  "id": 76,
+  "name": "smart thermostat",
+  "price": 3130,
+  "stock": 55,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2a"
+  },
+  "id": 77,
+  "name": "drone",
+  "price": 4159,
+  "stock": 95,
+  "description": null,
+  "image_url": null,
+  "category_id": 5,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2b"
+  },
+  "id": 78,
+  "name": "bluetooth speaker",
+  "price": 2724,
+  "stock": 11,
+  "description": null,
+  "image_url": null,
+  "category_id": 5,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2c"
+  },
+  "id": 79,
+  "name": "graphics card",
+  "price": 5552,
+  "stock": 23,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2d"
+  },
+  "id": 80,
+  "name": "smart lock",
+  "price": 2714,
+  "stock": 60,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2e"
+  },
+  "id": 81,
+  "name": "wireless charger",
+  "price": 1420,
+  "stock": 36,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f2f"
+  },
+  "id": 82,
+  "name": "smart scale",
+  "price": 1612,
+  "stock": 77,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f30"
+  },
+  "id": 84,
+  "name": "USB flash drive",
+  "price": 4799,
+  "stock": 96,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f31"
+  },
+  "id": 85,
+  "name": "webcam",
+  "price": 7300,
+  "stock": 87,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f32"
+  },
+  "id": 86,
+  "name": "wireless earphones",
+  "price": 5614,
+  "stock": 36,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f33"
+  },
+  "id": 87,
+  "name": "microphone",
+  "price": 2559,
+  "stock": 50,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f34"
+  },
+  "id": 88,
+  "name": "smart mirror",
+  "price": 9990,
+  "stock": 31,
+  "description": null,
+  "image_url": null,
+  "category_id": 2,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f35"
+  },
+  "id": 89,
+  "name": "portable charger",
+  "price": 2006,
+  "stock": 78,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f36"
+  },
+  "id": 90,
+  "name": "smart glasses",
+  "price": 4609,
+  "stock": 72,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f37"
+  },
+  "id": 91,
+  "name": "smart fridge",
+  "price": 869,
+  "stock": 60,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f38"
+  },
+  "id": 92,
+  "name": "robot vacuum cleaner",
+  "price": 7610,
+  "stock": 83,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f39"
+  },
+  "id": 93,
+  "name": "smart plug",
+  "price": 1573,
+  "stock": 76,
+  "description": null,
+  "image_url": null,
+  "category_id": 5,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3a"
+  },
+  "id": 94,
+  "name": "wireless keyboard",
+  "price": 3454,
+  "stock": 72,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3b"
+  },
+  "id": 95,
+  "name": "wearable device",
+  "price": 449,
+  "stock": 94,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3c"
+  },
+  "id": 96,
+  "name": "gaming mouse",
+  "price": 2915,
+  "stock": 54,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3d"
+  },
+  "id": 97,
+  "name": "external SSD",
+  "price": 3900,
+  "stock": 63,
+  "description": null,
+  "image_url": null,
+  "category_id": 5,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3e"
+  },
+  "id": 98,
+  "name": "smart pen",
+  "price": 2452,
+  "stock": 88,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f3f"
+  },
+  "id": 99,
+  "name": "smart ring",
+  "price": 8111,
+  "stock": 58,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f40"
+  },
+  "id": 100,
+  "name": "smart remote",
+  "price": 7438,
+  "stock": 36,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f41"
+  },
+  "id": 101,
+  "name": "smart mop",
+  "price": 9241,
+  "stock": 69,
+  "description": null,
+  "image_url": null,
+  "category_id": 3,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f42"
+  },
+  "id": 102,
+  "name": "smart trash can",
+  "price": 2621,
+  "stock": 51,
+  "description": null,
+  "image_url": null,
+  "category_id": 4,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f43"
+  },
+  "id": 103,
+  "name": "smart umbrella",
+  "price": 7069,
+  "stock": 54,
+  "description": null,
+  "image_url": null,
+  "category_id": 6,
+  "created_at": "2023-08-23 19:52:03",
+  "updated_at": "2023-08-23 19:52:03"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f44"
+  },
+  "id": 107,
+  "name": "product with trans",
+  "price": 100,
+  "stock": 9,
+  "category_id": 1,
+  "created_at": "2023-08-31 21:46:10",
+  "updated_at": "2023-08-31 21:46:10"
+},
+{
+  "_id": {
+    "$oid": "658f5033131d0f7237ce4f45"
+  },
+  "id": 108,
+  "name": "trans2",
+  "price": 10,
+  "stock": 10,
+  "category_id": 1,
+  "created_at": "2023-08-31 21:49:25",
+  "updated_at": "2023-08-31 21:49:25"
+}]

@@ -1,0 +1,153 @@
+MongoDB Shell
+
+https: www.mongodb.com/docs/manual/
+
+*Conectar a mongo
+	mongosh
+
+*Mostrar BDD
+	show databases
+		-- muestra las bdd que contienen colecciones
+		-- una bdd no existe sin colecciones
+
+*Ingresar a bdd
+	use 'nombre_db'
+
+*Crear colección
+	db.createCollection('nombre_coleccion')
+
+*Elimina colección
+	db.'nombre_coleccion'.drop()
+
+*Ver colecciones
+	db.getCollectionNames()
+
+*Insertar documentos dentro de una colección
+	db."nombre_coleccion".insertOne({'nombre_key':'valor','nombre_key':'valor'})
+	Ejemplo:
+		test> use website
+		switched to db website
+		website> db.products.insertOne({name:'notebook', price:1000})
+		{
+ 		 acknowledged: true,
+  		 insertedId: ObjectId('658f27928cc5be260fe99fd5')
+		}
+
+*Insertar más de un documento a la vez	
+	db.products.insertMany([{},{}])
+	Ejemplo:
+		website> db.products.insertMany([{name:'second'},{name:'with', stock:10}])
+		{
+  		 acknowledged: true,
+		 insertedIds: {
+		    '0': ObjectId('658f2a5f8cc5be260fe99fd6'),
+		    '1': ObjectId('658f2a5f8cc5be260fe99fd7')
+  		}
+	      }
+
+*Devolver todos los documentos creados en la colección
+	db.'nombre_coleccion'.find()
+
+*Buscar datos en una colección con filtros
+	-- buscar por id
+	db.'nombre_coleccion'.find({_id: Object("valor_ObjectId")})
+
+	-- buscar nombre
+	db.'nombre_coleccion'.find({name: "nombre")})
+
+	-- buscar un conjunto de valores que contenga la palabra
+	db.'nombre_coleccion'.find( { name : { $in : [ "nombre1" ], [ "nombre2" ] } } )
+
+	-- buscar por stock que sea mayor a 10
+	db.'nombre_coleccion'.find( { stock : { $gt : 10 } } )
+
+	-- buscar por stock que sea mayor o igual a 10
+	db.'nombre_coleccion'.find( { stock : { $gte : 10 } } )
+
+	-- limitar la busqueda en los primeros dos
+	db.'nombre_coleccion'.find().limit(2)
+
+	-- limitar la busqueda en los primeros dos salteando los primeros dos registros
+	db.'nombre_coleccion'.find().limit(2).skip(2)
+
+	-- ordenar
+		* 1 --> ascendente
+		* -1 --> descendente
+	db.'nombre_coleccion'.find().sort({name:1})
+
+*Actualización de un dato
+	Cuando se realiza una operación de actualización, debes usar operadores atómicos si estás modificando 
+		el valor de un campo existente en un documento. 
+	Los operadores atómicos aseguran que la operación de actualización sea atómica, es decir, que se realice 		de manera completa e indivisible.
+
+	Algunos de los operadores atómicos comunes en MongoDB son:
+		**$set: Establece el valor de un campo en un documento.
+			**db.collection.update({ _id: 1 }, { $set: { campo: nuevo_valor } });
+		**$inc: Incrementa el valor de un campo en un número específico.
+			**db.collection.update({ _id: 1 }, { $inc: { campo: 5 } });
+		**$push: Agrega un elemento a un arreglo en un documento.
+			**db.collection.update({ _id: 1 }, { $push: { arreglo: nuevo_elemento } })
+
+	db.colecction.updateOne(<filtro>, { $set: { campo : "valor" }, $inc : { campo : valor } } )
+	Ejemplo:
+		db.products.updateOne({"_id" : ObjectId("658f3d448f66a4418d2703a7")}, {$set : {name: "modified", stock: 100} })
+
+
+*Actualización de varios registros a la vez
+	db.collection.updateMany( { "filtro" }, { $set : { campo : valor } } )
+	Ejemplo:
+		  Modifico el precio a 0 en los registros que el stock sea mayor o igual a 10
+		 db.products.updateMany({stock : { $gte : 10}}, {$set : {price : 0}})
+
+*Eliminar un campo con el updateMany()
+	Como segundo parámetro debo agregar un array de objetos
+	Ejemplo:
+		 Elimino el precio en los productos que el stock sea mayor o igual a 10
+		 Seteo el valor vacío
+		 db.products.updateMany({stock : {$gte : 10}}, [{$set : {}}, {$unset : "price"}])
+
+*Renombrar campo en documentos
+	db.collection.updateMany({filtro o vacío}, {$rename: {"palabra_a_modificar": "nuevo_valor"}})
+	Ejemplo:
+		 al poner el filtro vacío le pido que renombre todos
+		 db.products.updateMany({}, {$rename: {"cetegory": "category"}})
+
+*Mostrar índices
+	db.collection.getIndexes()
+
+*Crear índice
+	db.<collection>.createIndex({'campo':<sortOrder>, {tipo_campo: <sortOrder, name: 'nombre_indice'>})
+	Ejemplo:
+		db.products.createIndex({name:1}, {unique:1, name: "products_index_unique_name})
+
+*Crear índices compuestos
+	db.<collection>.createIndex( {
+		//campo : //asc (1) o desc (-1)
+   		<field1>: <sortOrder>,
+   		<field2>: <sortOrder>,
+   		...
+   		<fieldN>: <sortOrder>
+*Eliminar índice
+	db.collection.dropIndex('key')
+
+*Eliminar un registro de la colección
+	Recomendación para eliminar usar el ID o algún campo que no se duplique
+	deleteOne() --> Busca el primer registro que coincida y lo elimina
+	Ejemplo:
+		 db.products.deleteMany("_id" : ObjectId("valor_id"))
+		 db.products.deleteMany({stock : {$get : 1000}}) --> Eliminaria el primer registro que el stock 
+			 sea mayor o igual a 10000
+
+*Eliminar todos los registros de la colección
+	db.collection.deleteMany()
+	Si hacemos db.products.deleteMany({}) --> Eliminariamos todos los registros
+	Ejemplo:
+		Elimino todos los productos que el stock sea mayor o igual a 10
+		db.products.deleteMany({stock : {$gte: 10}})
+
+
+*Eliminar base de datos
+	use "nombre_db"
+	db.dropDatabase()
+
+

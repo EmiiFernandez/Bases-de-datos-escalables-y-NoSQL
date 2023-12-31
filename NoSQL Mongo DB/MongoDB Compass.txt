@@ -1,0 +1,155 @@
+MongoDB Compass
+
+*Funciones de agregación
+	En MongoBD Compass ingreso a mi colección y en Aggregation puedo realizar las funciones
+
+	-- Contar total de productos por category_id
+		/**
+ 		* _id: The id of the group.
+ 		* fieldN: The first field name.
+ 		*/
+		{
+  			_id: "$category_id",
+ 			 total: {
+ 			   $count: {},
+			},
+		}
+
+
+	-- Contar el total de los productos		
+		/**
+ 		* Provide the field name for the count.
+ 		*/
+		"string (ej: total)"
+
+*Creación de indices compuestos
+	Ingreso a mi colección y selecciono Indexes
+	Dentro de Indexes creo que el índice que deseo, puedo usar uno o más campos
+	https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/
+	Ejemplo:
+		category_id y selecciono el tipo de ordenamiento
+		price y selecciono el tipo de ordenamienta
+			-- En este caso sería de tipo compuesto por que tengo más de un campo
+		En la sección Documents puedo filtrar por el índice creado:
+		Ejemplo:
+			{category_id: 3, price:{$gte : 100}}
+
+*Patrones de diseño de documentos: Embebido one to many
+	 Relación entre dos documentos donde un documento de una colección se relaciona con exactamente un 			documento de otra colección. Este tipo de relación se establece mediante algún identificador único 		compartido entre ambos documentos.
+	Ejemplo: Un usuario tiene un perfil
+		{
+ 			 "_id": 1,
+ 			 "nombre": "Usuario1",
+  			"perfil": {
+   			 "edad": 25,
+   			 "ciudad": "Ejemplo City"
+ 			 }
+		}
+
+*Patrones de diseño de documentos: Embebido one to many
+	Forma en que se modela una relación uno a muchos (one-to-many) entre documentos mediante la inclusión de documentos embebidos dentro de un campo de arreglo en el documento principal.
+	Ejemplo: Un autor puede tener múltiples libros
+		{
+ 		 "_id": 1,
+		  "nombre": "J.K. Rowling",
+ 		 "libros": [
+ 		   {
+    			  "titulo": "Harry Potter y la piedra filosofal",
+   			   "año_publicacion": 1997
+ 		   },
+ 		   {
+ 			     "titulo": "Harry Potter y la cámara secreta",
+  			    "año_publicacion": 1998
+  		  },
+ 			   // Otros libros...
+  		]
+	}
+
+*Patrones de diseño de documentos: Reference One to many
+	Forma en que se modela una relación uno a muchos (one-to-many) entre documentos utilizando referencias. En 		lugar de embeber documentos relacionados directamente dentro de un campo de arreglo en el documento 		principal, se utiliza un campo de referencia que contiene identificadores (IDs) que apuntan a 			documentos en otra colección.
+	Ejemplo: Tenemos dos entidades: Autor y Libro, y un autor puede tener varios libros.
+		Documento de Autor:
+			{
+ 				 "_id": 1,
+ 				 "nombre": "J.K. Rowling"
+			}
+		Documento de Libro:
+			{
+ 				 "_id": 101,
+ 				 "titulo": "Harry Potter y la piedra filosofal",
+ 				 "autor_id": 1
+			}
+
+*insert documentos embebidos
+	Insertar documentos embebidos dentro de otros documentos utilizando el método insert o insertOne en el 			shell de MongoDB o mediante el controlador de MongoDB en el lenguaje de programación que estés 			utilizando.
+	Ejemplo:	
+		db.autores.insertOne({
+  			nombre: "Gabriel García Márquez",
+  			libros: [
+   			 {
+      				titulo: "Cien años de soledad",
+      				genero: "Realismo mágico"
+   			 },
+   			 {
+    				  titulo: "El otoño del patriarca",
+     				 genero: "Ficción"
+   			 }
+  			  // Puedes agregar más libros aquí
+  			]
+		});
+	Uno o varios libros:
+		db.autores.insert([
+ 			{
+   			nombre: "Julio Cortázar",
+  			libros: [
+    			 {
+     				titulo: "Rayuela",
+      				genero: "Realismo mágico"
+     			 },
+      			{
+        			titulo: "Bestiario",
+        			genero: "Ficción"
+      			}
+      			// Puedes agregar más libros aquí
+    		]
+ 	 },
+ 			{
+  			nombre: "Isabel Allende",
+    			libros: [
+      				{
+        				titulo: "La casa de los espíritus",
+       					genero: "Realismo mágico"
+     				 },
+      				{
+        				titulo: "Eva Luna",
+       					genero: "Ficción"
+     				 }
+      					// Puedes agregar más libros aquí
+  				  ]
+  			}
+		]);
+
+*Validaciones
+	Ingreso al documento
+	En validaciones agrego, por ejemplo, los campos obligatorios al ingresar un producto
+	Ejemplo:
+		{
+  			$jsonSchema : {
+    			bsonType: "object",
+    			title: "products min validation",
+    			required: ["name", "category_id"],
+   			 properties: {
+     				 name: {
+					--tipo de dato
+        				bsonType: "string",
+       					description: " 'name must be a string and is required'"
+     				 },
+      				category_id: {
+        				bsonType: "string",
+        				description: " 'category_id must be a string and is required'"
+      					}
+    				}
+  			}
+		}
+
+		Luego hago click en botón update
